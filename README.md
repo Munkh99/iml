@@ -35,7 +35,6 @@ Transfer Learning
 In the “Triplet Loss Network” architecture, each subnetwork has been constructed using Transfer Learning techniques. Specifically, for the task of image retrieval and comparison, three "twin" networks have been employed, all of which are pre-trained ResNet50 models. These pre-trained models serve as the basis for extracting and defining the features required to compare query images and have been chosen due to their great discriminative feature learning techniques (Figure 3).
 
 Figure 3: ResNet50 Architecture (He et al., 2015)
-![alt text](https://github.com/Munkh99/iml/blob/master/figures/Figure_1.png?raw=true)
 
- 
+
 
