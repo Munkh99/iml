@@ -16,19 +16,23 @@ Figure 1: A Black Box View of the Task
 
 The necessary libraries to execute our code are:
 
-- `pip install pandas`
-- `pip install numpy`
-- `pip install pathlib`
-- `pip install PIL`
-- `pip install -U scikit-learn`
-- `pip install Pillow`
-- `pip install torch`
-- `pip install torchvision`
-- `pip install opencv-python`
-- `pip install more-itertools`
-- `pip install glob2`
-- `pip install wandb`
-- `pip install PyYAML`
+- numpy==1.23.5
+- numpy==1.24.2
+- opencv_contrib_python==4.7.0.72
+- opencv_python==4.7.0.72
+- opencv_python_headless==4.7.0.72
+- pandas==2.0.0
+- Pillow==9.5.0
+- Pillow==9.4.0
+- Pillow==9.5.0
+- PyYAML==6.0
+- PyYAML==6.0
+- Requests==2.31.0
+- scikit_learn==1.2.2
+- torch==2.1.0.dev20230416
+- torch==2.0.0
+- torchvision==0.16.0.dev20230416
+- torchvision==0.15.1
 
 ## Repository Structure
 ```
