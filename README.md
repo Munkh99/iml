@@ -32,19 +32,18 @@ The necessary libraries to execute our code are:
 ```
 ├── checkpoints
 │   └── Triplet             <- contains model checkpopints
-├── config
-│   └── triplet_init.yaml 
+├── config                  <- config
 ├── data
 │   └── faces               <- contains training images     
 │   └── test_data           <- contains competition images 
-├── figures                 <- figures
+├── figures          
 ├── dataset.py              <- data retrieval and dataset class
-├── haarcascade_frontalface_default.xml
 ├── network.py              <- model architecture
 ├── README.md  
 ├── request_send.py         <- image distance estimation and competition request sending
 ├── train.py                <- model training
-└── utils.cpp               <- utils
+├── utils.py                <- utils
+└── haarcascade_frontalface_default.xml          
 
 ```
 
