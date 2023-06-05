@@ -13,26 +13,17 @@ This report outlines popular CBIR techniques within Machine Learning to maximize
 Figure 1: A Black Box View of the Task
 
 ## Pre-requisites
+- Python 3.10.10
+## Requirements
 
-The necessary libraries to execute our code are:
+The `requirements.txt` file contains a list of dependencies required to run this project. These dependencies are external packages or libraries that need to be installed in order for the project to function properly.
 
-- numpy==1.23.5
-- numpy==1.24.2
-- opencv_contrib_python==4.7.0.72
-- opencv_python==4.7.0.72
-- opencv_python_headless==4.7.0.72
-- pandas==2.0.0
-- Pillow==9.5.0
-- Pillow==9.4.0
-- Pillow==9.5.0
-- PyYAML==6.0
-- PyYAML==6.0
-- Requests==2.31.0
-- scikit_learn==1.2.2
-- torch==2.1.0.dev20230416
-- torch==2.0.0
-- torchvision==0.16.0.dev20230416
-- torchvision==0.15.1
+### Installation
+
+To install the required dependencies, you can use the following command:
+
+```shell
+pip install -r requirements.txt
 
 ## Repository Structure
 ```
