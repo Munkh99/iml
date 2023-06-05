@@ -60,8 +60,7 @@ The results were saved in a JSON file containing our group name as a value, the 
 Table 1: Results from the Triplet Loss Network
 
 The results differed significantly from what was observed during the training and validation procedure, as shown below:
-| Image 1 | Image 2 |
-|---------|---------|
+
 | ![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_2.png)| ![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_1.png) |
 
 Figure 5: Accuracy and Loss from our Dataset
@@ -69,6 +68,7 @@ Figure 5: Accuracy and Loss from our Dataset
 The other implemented approaches yielded the following results:
 
 ![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Screenshot%202023-06-05%20at%2011.08.41.png)
+
 Table 2: Results from the ResNet50, EfficientNet, VGG16
  
 Among the models evaluated, ResNet50 emerged as the top-performing model for image retrieval. An example of the retrieval process is shown below:
