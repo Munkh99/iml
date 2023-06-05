@@ -12,19 +12,19 @@ This report outlines popular CBIR techniques within Machine Learning to maximize
 ![alt text](https://github.com/Munkh99/iml/blob/master/figures/Screenshot%202023-06-05%20at%2010.50.55.png)
 Figure 1: A Black Box View of the Task
 
-#### Pre-requisites
+### Pre-requisites
 - Python 3.10.10
-#### Requirements
+### Requirements
 The `requirements.txt` file contains a list of dependencies required to run this project. These dependencies are external packages or libraries that need to be installed in order for the project to function properly.
 
-#### Installation
+### Installation
 
 To install the required dependencies, you can use the following command:
 
 ```shell
 pip install -r requirements.txt
 ```
-#### Repository Structure
+### Repository Structure
 ```
 ├── checkpoints
 │   └── Triplet             <- contains model checkpopints
