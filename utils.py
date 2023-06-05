@@ -10,7 +10,6 @@ def seed_everything(seed=0):
     torch.manual_seed(seed)
 
 
-
 class TripletLoss(nn.Module):
     def __init__(self, margin=1.0):
         super(TripletLoss, self).__init__()
