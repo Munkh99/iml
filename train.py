@@ -1,8 +1,5 @@
-import os
-
 import numpy as np
 from torch.optim.lr_scheduler import StepLR
-
 import wandb
 import torch
 from pathlib import Path

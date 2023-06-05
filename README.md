@@ -17,7 +17,9 @@ Figure 1: A Black Box View of the Task
 The necessary libraries to execute our code are:
 
 - `pip install pandas`
-- `pip install pandas`
+- `pip install numpy`
+- `pip install pathlib`
+- `pip install PIL`
 - `pip install -U scikit-learn`
 - `pip install Pillow`
 - `pip install torch`
