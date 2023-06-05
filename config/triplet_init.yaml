@@ -1,0 +1,21 @@
+model:
+  architecture: resnet50
+  pretrained: True
+
+training:
+  optimizer: adam
+  learning_rate_pretrained: 0.00001
+  learning_rate_embedding: 0.0001
+
+  max_epochs: 20
+  save_checkpoint_every: 3
+  early_stopping_patience: 8
+
+  scheduler_step: 5
+  scheduler_gamma : 0.1
+
+dataset:
+  data_root: "data/faces/img_align_celeba_cropped_more_small"
+  data_csv: "data/faces/identity_CelebA_cropped_more_small.txt"
+  train_batch_size: 32
+  val_batch_size: 32

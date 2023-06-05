@@ -1,0 +1,21 @@
+command_line:
+  checkpoint_path: ./checkpoints
+  config_path: config/triplet_init.yaml
+  run_name: Triplet
+dataset:
+  data_csv: data/faces/identity_CelebA_cropped_more_small.txt
+  data_root: data/faces/img_align_celeba_cropped_more_small
+  train_batch_size: 32
+  val_batch_size: 32
+model:
+  architecture: resnet50
+  pretrained: true
+training:
+  early_stopping_patience: 8
+  learning_rate_embedding: 0.0001
+  learning_rate_pretrained: 1.0e-05
+  max_epochs: 20
+  optimizer: adam
+  save_checkpoint_every: 3
+  scheduler_gamma: 0.1
+  scheduler_step: 5
