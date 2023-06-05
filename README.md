@@ -68,6 +68,10 @@ The inference process is performed by the `distance_estimator` function, which t
 ![alt text](https://github.com/Munkh99/iml/blob/add7ba5bf8c96e691ad33bd617d1cb798cd29c99/figures/Screenshot%202023-06-05%20at%2010.51.46.png)
 Figure 4: Inference procedure
 
+### Other models folder
+
+In the `other models` the pre-trained ResNet50, EfficientNet, and VGG16 are saved. Refer to that "README.md" file for further information.
+
 ### Contributions
 The research into different pieces of literature and possible datasets was done as a group effort, to begin working on the project.  
 The Triplet Loss Network has been mostly redefined in the architecture by Munkhdelger, while Pooria and Alice have dealt with data augmentation and face-cropping. 
