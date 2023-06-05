@@ -70,7 +70,7 @@ The other implemented approaches yielded the following results:
 
 ![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Screenshot%202023-06-05%20at%2011.08.41.png)
 Table 2: Results from the ResNet50, EfficientNet, VGG16
-
+ 
 Among the models evaluated, ResNet50 emerged as the top-performing model for image retrieval. An example of the retrieval process is shown below:
 ![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Screenshot%202023-06-05%20at%2011.08.56.png)
 Figure 6: Query Example
