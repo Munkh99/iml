@@ -25,7 +25,7 @@ Model
 Metric Learning 
 Distance Metric Learning can be seen as a preliminary stage in distance-based learning algorithms (Suárez, García, and Herrera, 2021.). In our specific task, we have implemented a “Triplet Loss Network”, due to its ability to learn similarities directly from the data and the embedding-based approach, which allows for efficient and scalable search (Schroff, Kalenichenko, and Philbin, 2015).
 A Triplet Loss Network comprises three sub-networks with identical architecture and weights (Hoffer and Ailon, 2018).  Each sub-network takes a single input and produces a feature representation as its output, which is then used to learn the similarity and dissimilarity between inputs (Figure 2).
-
+![alt text](https://github.com/Munkh99/iml/blob/master/figures/Screenshot%202023-06-05%20at%2010.51.22.png)
 For training, backpropagation is used through the Triplet Loss function:
 
 The loss function encourages the anchor and positive examples to be closer to each other than the anchor and negative examples, by at least a specified margin value. This margin acts as a threshold, ensuring that the positive and negative pairs are sufficiently separated in the embedding space. By minimizing the triplet loss, the network learns to produce embeddings that effectively discriminate between different classes or categories.
