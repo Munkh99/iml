@@ -61,8 +61,13 @@ Table 1: Results from the Triplet Loss Network
 
 The results differed significantly from what was observed during the training and validation procedure, as shown below:
 
-![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_2.png)
-![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_1.png)
+| Image 1 | Image 2 |
+|---------|---------|
+| ![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_2.png)| ![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_1.png) |
+
+
+
+
 
 Figure 5: Accuracy and Loss from our Dataset
 
