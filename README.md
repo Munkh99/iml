@@ -24,7 +24,7 @@ To install the required dependencies, you can use the following command:
 
 ```shell
 pip install -r requirements.txt
-
+```
 ## Repository Structure
 ```
 ├── checkpoints
