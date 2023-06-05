@@ -49,7 +49,7 @@ In the “Triplet Loss Network” architecture, each subnetwork has been constru
 Figure 3: ResNet50 Architecture (He et al., 2015)
 
 #### Inference Procedure
-The inference process is performed by the `network.py` function, which takes the query set and the gallery set as inputs. It compares the extracted features from each image to determine the distance or dissimilarity between them. This distance estimation helps quantify the similarity or discrepancy between the query images and the gallery images. By analyzing the feature distances, the function can provide insights into the similarity rankings or identify potential matches between the query and gallery images (Figure 4).
+The inference process is performed by the `distance_estimator` function, which takes the query set and the gallery set as inputs. It compares the extracted features from each image to determine the distance or dissimilarity between them. This distance estimation helps quantify the similarity or discrepancy between the query images and the gallery images. By analyzing the feature distances, the function can provide insights into the similarity rankings or identify potential matches between the query and gallery images (Figure 4).
 ![alt text](https://github.com/Munkh99/iml/blob/add7ba5bf8c96e691ad33bd617d1cb798cd29c99/figures/Screenshot%202023-06-05%20at%2010.51.46.png)
 Figure 4: Inference procedure
 
