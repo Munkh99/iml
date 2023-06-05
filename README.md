@@ -41,7 +41,7 @@ Figure 3: ResNet50 Architecture (He et al., 2015)
 
 #### Inference Procedure
 The inference process is performed by the `distance_estimator` function, which takes the query set and the gallery set as inputs. It compares the extracted features from each image to determine the distance or dissimilarity between them. This distance estimation helps quantify the similarity or discrepancy between the query images and the gallery images. By analyzing the feature distances, the function can provide insights into the similarity rankings or identify potential matches between the query and gallery images (Figure 4).
-![alt_text](https://github.com/Munkh99/iml/blob/add7ba5bf8c96e691ad33bd617d1cb798cd29c99/figures/Screenshot%202023-06-05%20at%2010.51.46.png)
+![alt text](https://github.com/Munkh99/iml/blob/add7ba5bf8c96e691ad33bd617d1cb798cd29c99/figures/Screenshot%202023-06-05%20at%2010.51.46.png)
 Figure 4: Inference procedure
 
 #### Other models 
@@ -50,11 +50,53 @@ For our project, we have explored a classification-driven approach incorporating
 ## Results
 The results were saved in a JSON file containing our group name as a value, the key “image” connected to the query, and the retrieved results expressed as a list. The “Triplet Loss Network” performed as follows on the challenge day:
  
-
+![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Screenshot%202023-06-05%20at%2011.07.56.png)
 Table 1: Results from the Triplet Loss Network
 
+The results differed significantly from what was observed during the training and validation procedure, as shown below:
+![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_2.png)
+![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Figure_1.png)
+Figure 5: Accuracy and Loss from our Dataset
 
+The other implemented approaches yielded the following results:
+[alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Screenshot%202023-06-05%20at%2011.08.41.png)
+Table 2: Results from the ResNet50, EfficientNet, VGG16
 
+Among the models evaluated, ResNet50 emerged as the top-performing model for image retrieval. An example of the retrieval process is shown below:
+![alt text](https://github.com/Munkh99/iml/blob/6a48659ec3b6ccdd844aa95d7f417a4c59495148/figures/Screenshot%202023-06-05%20at%2011.08.56.png)
+Figure 6: Query Example
+
+## Discussion
+The triplet loss model is effective for image retrieval tasks, learning discriminative embeddings, and encouraging closer mapping of similar examples. Moreover, metric learning principles enable efficient searching for similar images based on embedding distances. To conclude, the model is very flexible and can easily be adapted to different types of tasks. However, computational costs are high, especially with large datasets, and selecting informative triplets is crucial for successful training, but can be challenging and time-consuming.
+As mentioned before, other 3 models were tested to compare with our main solution: VGG16, Resnet50, and EfficientNet.  The ResNet50 model achieved the best results, due to its deeper architecture. Compared to VGG16 and EfficientNet, ResNet50's increased depth allows it to learn more complex hierarchical features more easily, contributing to its superior performance. Moreover, it is more robust to noise and variations, a fundamental characteristic when dealing with high-volume queries and galleries. It goes so far as to beat the performance of the triplet loss network, as better discriminative feature learning techniques may advantage it.
+
+## Conclusions
+Our project highlighted the efficiency and accuracy of the ResNet50 pre-trained model compared to other models we tested. It outperformed all other models in terms of performance and demonstrated superior computational manageability and speed. 
+Despite the performance of ResNet50, we acknowledge that there is room for further improvement in our Triplet Loss Network. We believe that with enhancements, it has the potential to achieve, if not surpass, the accuracy of ResNet50. 
+One aspect we considered is the possibility of our model being affected by a domain shift, which could potentially reduce its performance. To address this, we propose implementing a Discriminative Adversarial Neural Network. By incorporating a domain classifier, we aim to better define and handle the domain shift, potentially resulting in improved performance and robustness.
+Furthermore, by carefully selecting datasets and paying more attention to augmentations and cropping techniques, we could have potentially improved the performance of our model. These considerations could lead to better generalization and robustness. In conclusion, it would be intriguing to explore the utilization of YOLOv8 for face detection. 
+
+## Contributions
+The research into different pieces of literature and possible datasets was done as a group effort, to begin working on the project.  
+The Triplet Loss Network has been mostly redefined in the architecture by Munkhdelger, while Pooria and Alice have dealt with data augmentation and face-cropping. 
+The alternative approaches have been implemented by Pooria and Alice, however, the main code structure was changed and cleaned by Pooria.
+The report was written by Alice, and figures and diagrams were drawn by Pooria and  Munkhdelger.
+
+## References
+
+Halawani, A., Teynor, A., Brunner, G. and Burkhardt, H. (2006). Fundamentals and Applications of Image Retrieval: An Overview. Bioimaging and Analysis View project Ethics and Agile Software Development -Mapping the Landscape: A Mapping Review Protocol View project Fundamentals and Applications of Image Retrieval.
+Hameed, I.M., Abdulhussain, S.H. and Mahmmod, B.M. (2021). Content-based image retrieval: A review of recent trends. Cogent Engineering, 8(1), p.1927469. doi:https://doi.org/10.1080/23311916.2021.1927469.
+He, K., Zhang, X., Ren, S. and Sun, J. (2015). Deep Residual Learning for Image Recognition. [online] Available at: https://arxiv.org/pdf/1512.03385v1.pdf.
+Hoffer, E. and Ailon, N. (2018). Deep metric learning using Triplet network. arXiv:1412.6622 [cs, stat]. [online] Available at: https://arxiv.org/abs/1412.6622.
+Hosna, A., Merry, E., Gyalmo, J., Alom, Z., Aung, Z. and Azim, M.A. (2022). Transfer learning: a friendly introduction. Journal of Big Data, 9(1). doi:https://doi.org/10.1186/s40537-022-00652-w.
+Liu, Y., Zhang, D., Lu, G. and Ma, W.-Y. (2007). A survey of content-based image retrieval with high-level semantics. Pattern Recognition, 40(1), pp.262–282. doi:https://doi.org/10.1016/j.patcog.2006.04.045.
+Lu, D. and Weng, Q. (2007). A survey of image classification methods and techniques for improving classification performance. International Journal of Remote Sensing, [online] 28(5), pp.823–870. doi:https://doi.org/10.1080/01431160600746456.
+Schroff, F., Kalenichenko, D. and Philbin, J. (2015). FaceNet: A unified embedding for face recognition and clustering. 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). [online] doi:https://doi.org/10.1109/cvpr.2015.7298682.
+Suárez, J.L., García, S. and Herrera, F. (2021). A tutorial on distance metric learning: Mathematical foundations, algorithms, experimental analysis, prospects and challenges. Neurocomputing, 425, pp.300–322. doi:https://doi.org/10.1016/j.neucom.2020.08.017.
+Tan, M. and Le, Q.V. (2019). EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. [online] arXiv.org. Available at: https://arxiv.org/abs/1905.11946.
+Wan, J., Hoi, S., Wu, P., Zhu, J., Wang, D., Wu, Zhang, Y. and Li (2014). Deep learning for content-based image retrieval: A comprehensive study. pp.157–166.
+Wang, J., Song, Y., Leung, T., Rosenberg, C., Wang, J., Philbin, J., Chen, B. and Wu, Y. (2014). Learning Fine-grained Image Similarity with Deep Ranking. [online] Available at: https://arxiv.org/pdf/1404.4661.pdf [Accessed 2 Jun. 2023].
+www.kaggle.com. (n.d.). CelebFaces Attributes (CelebA) Dataset. [online] Available at: https://www.kaggle.com/datasets/jessicali9530/celeba-dataset.
 
 
 
