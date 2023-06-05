@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ├── data
 │   └── faces               <- contains training images     
 │   └── test_data           <- contains competition images 
-├── other models            <- another approach (classifier) 
+├── other models            <- another approach (classifier) we tested
 ├── figures          
 ├── dataset.py              <- data retrieval and dataset class
 ├── network.py              <- model architecture
