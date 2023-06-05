@@ -7,7 +7,7 @@ CBIR utilizes feature extraction techniques to collect relevant information abou
 Although it might sound similar to other tasks such as image classification, or object detection, it is a unique approach. In contrast to classification methods that aim to assign labels or categories to images, this task focuses on finding similarities with a query image, given as an input. Object detection, instead, involves using different algorithms and models and attempts to identify and localize specific objects of interest within an image, providing detailed information about their presence and spatial location. (Wan et al., 2014)
 
 This report outlines popular CBIR techniques within Machine Learning to maximize the accuracy with which it is asked to match a picture of a human face, with a provided dataset (Figure 1). The project has been coded completely in Python3.
-
+![alt text](https://github.com/Munkh99/iml/blob/master/figures/Screenshot%202023-06-05%20at%2010.50.55.png)
 Figure 1: A Black Box View of the Task
 
 
@@ -35,6 +35,8 @@ Transfer Learning
 In the “Triplet Loss Network” architecture, each subnetwork has been constructed using Transfer Learning techniques. Specifically, for the task of image retrieval and comparison, three "twin" networks have been employed, all of which are pre-trained ResNet50 models. These pre-trained models serve as the basis for extracting and defining the features required to compare query images and have been chosen due to their great discriminative feature learning techniques (Figure 3).
 
 Figure 3: ResNet50 Architecture (He et al., 2015)
+
+
 
 
 
