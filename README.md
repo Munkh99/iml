@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ├── request_send.py         <- image distance estimation and competition request sending
 ├── train.py                <- model training
 ├── utils.py                <- utils
-├── requirements.txt        <- utils
+├── requirements.txt        <- contains package names
 └── haarcascade_frontalface_default.xml          
 
 ```
