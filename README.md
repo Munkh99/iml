@@ -1,4 +1,4 @@
-# iml
+# Introduction to Machine Learning - Project report 
 
 ## Introduction
 Image retrieval is a crucial machine learning task, that is to say, a specific problem or objective that the model is designed to solve. It aims to search for images in a dataset, similar to the features of a given query image.  Its importance is directly connected to the relevance that images have, for the human species, to convey information and thus it is a highly researched field. (Halawani et al., 2006)
@@ -86,19 +86,19 @@ The report was written by Alice, and figures and diagrams were drawn by Pooria a
 
 ## References
 
-Halawani, A., Teynor, A., Brunner, G. and Burkhardt, H. (2006). Fundamentals and Applications of Image Retrieval: An Overview. Bioimaging and Analysis View project Ethics and Agile Software Development -Mapping the Landscape: A Mapping Review Protocol View project Fundamentals and Applications of Image Retrieval.
-Hameed, I.M., Abdulhussain, S.H. and Mahmmod, B.M. (2021). Content-based image retrieval: A review of recent trends. Cogent Engineering, 8(1), p.1927469. doi:https://doi.org/10.1080/23311916.2021.1927469.
-He, K., Zhang, X., Ren, S. and Sun, J. (2015). Deep Residual Learning for Image Recognition. [online] Available at: https://arxiv.org/pdf/1512.03385v1.pdf.
-Hoffer, E. and Ailon, N. (2018). Deep metric learning using Triplet network. arXiv:1412.6622 [cs, stat]. [online] Available at: https://arxiv.org/abs/1412.6622.
-Hosna, A., Merry, E., Gyalmo, J., Alom, Z., Aung, Z. and Azim, M.A. (2022). Transfer learning: a friendly introduction. Journal of Big Data, 9(1). doi:https://doi.org/10.1186/s40537-022-00652-w.
-Liu, Y., Zhang, D., Lu, G. and Ma, W.-Y. (2007). A survey of content-based image retrieval with high-level semantics. Pattern Recognition, 40(1), pp.262–282. doi:https://doi.org/10.1016/j.patcog.2006.04.045.
-Lu, D. and Weng, Q. (2007). A survey of image classification methods and techniques for improving classification performance. International Journal of Remote Sensing, [online] 28(5), pp.823–870. doi:https://doi.org/10.1080/01431160600746456.
-Schroff, F., Kalenichenko, D. and Philbin, J. (2015). FaceNet: A unified embedding for face recognition and clustering. 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). [online] doi:https://doi.org/10.1109/cvpr.2015.7298682.
-Suárez, J.L., García, S. and Herrera, F. (2021). A tutorial on distance metric learning: Mathematical foundations, algorithms, experimental analysis, prospects and challenges. Neurocomputing, 425, pp.300–322. doi:https://doi.org/10.1016/j.neucom.2020.08.017.
-Tan, M. and Le, Q.V. (2019). EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. [online] arXiv.org. Available at: https://arxiv.org/abs/1905.11946.
-Wan, J., Hoi, S., Wu, P., Zhu, J., Wang, D., Wu, Zhang, Y. and Li (2014). Deep learning for content-based image retrieval: A comprehensive study. pp.157–166.
-Wang, J., Song, Y., Leung, T., Rosenberg, C., Wang, J., Philbin, J., Chen, B. and Wu, Y. (2014). Learning Fine-grained Image Similarity with Deep Ranking. [online] Available at: https://arxiv.org/pdf/1404.4661.pdf [Accessed 2 Jun. 2023].
-www.kaggle.com. (n.d.). CelebFaces Attributes (CelebA) Dataset. [online] Available at: https://www.kaggle.com/datasets/jessicali9530/celeba-dataset.
+- Halawani, A., Teynor, A., Brunner, G. and Burkhardt, H. (2006). Fundamentals and Applications of Image Retrieval: An Overview. Bioimaging and Analysis View project Ethics and Agile Software Development -Mapping the Landscape: A Mapping Review Protocol View project Fundamentals and Applications of Image Retrieval.
+- Hameed, I.M., Abdulhussain, S.H. and Mahmmod, B.M. (2021). Content-based image retrieval: A review of recent trends. Cogent Engineering, 8(1), p.1927469. doi:https://doi.org/10.1080/23311916.2021.1927469.
+- He, K., Zhang, X., Ren, S. and Sun, J. (2015). Deep Residual Learning for Image Recognition. [online] Available at: https://arxiv.org/pdf/1512.03385v1.pdf.
+- Hoffer, E. and Ailon, N. (2018). Deep metric learning using Triplet network. arXiv:1412.6622 [cs, stat]. [online] Available at: https://arxiv.org/abs/1412.6622.
+- Hosna, A., Merry, E., Gyalmo, J., Alom, Z., Aung, Z. and Azim, M.A. (2022). Transfer learning: a friendly introduction. Journal of Big Data, 9(1). doi:https://doi.org/10.1186/s40537-022-00652-w.
+- Liu, Y., Zhang, D., Lu, G. and Ma, W.-Y. (2007). A survey of content-based image retrieval with high-level semantics. Pattern Recognition, 40(1), pp.262–282. doi:https://doi.org/10.1016/j.patcog.2006.04.045.
+- Lu, D. and Weng, Q. (2007). A survey of image classification methods and techniques for improving classification performance. International Journal of Remote Sensing, [online] 28(5), pp.823–870. doi:https://doi.org/10.1080/01431160600746456.
+- Schroff, F., Kalenichenko, D. and Philbin, J. (2015). FaceNet: A unified embedding for face recognition and clustering. 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). [online] doi:https://doi.org/10.1109/cvpr.2015.7298682.
+- Suárez, J.L., García, S. and Herrera, F. (2021). A tutorial on distance metric learning: Mathematical foundations, algorithms, experimental analysis, prospects and challenges. Neurocomputing, 425, pp.300–322. doi:https://doi.org/10.1016/j.neucom.2020.08.017.
+- Tan, M. and Le, Q.V. (2019). EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. [online] arXiv.org. Available at: https://arxiv.org/abs/1905.11946.
+- Wan, J., Hoi, S., Wu, P., Zhu, J., Wang, D., Wu, Zhang, Y. and Li (2014). Deep learning for content-based image retrieval: A comprehensive study. pp.157–166.
+- Wang, J., Song, Y., Leung, T., Rosenberg, C., Wang, J., Philbin, J., Chen, B. and Wu, Y. (2014). Learning Fine-grained Image Similarity with Deep Ranking. [online] Available at: https://arxiv.org/pdf/1404.4661.pdf [Accessed 2 Jun. 2023].
+- www.kaggle.com. (n.d.). CelebFaces Attributes (CelebA) Dataset. [online] Available at: https://www.kaggle.com/datasets/jessicali9530/celeba-dataset.
 
 
 
