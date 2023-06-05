@@ -20,18 +20,21 @@ To enhance the results’ accuracy, a dataset consisting of more than 200,000 im
 The photos were stored in a folder as PNG files, with size 224x224, and the corresponding labels were saved in a text document. The data were randomly split into train and validation sets using indexes, with 80% used for training and 20% for validation.
 We faced a face-detection challenge during the upload process. To streamline the code and reduce computational overhead, we used the Haarcascade algorithm instead of developing a Faster R-CNN model. This decision resulted in a lighter solution.
 
-Model 
+###Model 
 
-Metric Learning 
+###Metric Learning 
 Distance Metric Learning can be seen as a preliminary stage in distance-based learning algorithms (Suárez, García, and Herrera, 2021.). In our specific task, we have implemented a “Triplet Loss Network”, due to its ability to learn similarities directly from the data and the embedding-based approach, which allows for efficient and scalable search (Schroff, Kalenichenko, and Philbin, 2015).
 A Triplet Loss Network comprises three sub-networks with identical architecture and weights (Hoffer and Ailon, 2018).  Each sub-network takes a single input and produces a feature representation as its output, which is then used to learn the similarity and dissimilarity between inputs (Figure 2).
 ![alt text](https://github.com/Munkh99/iml/blob/master/figures/Screenshot%202023-06-05%20at%2010.51.22.png)
-For training, backpropagation is used through the Triplet Loss function:
+Figure 2: The Triplet Loss Network Architecture
 
+
+For training, backpropagation is used through the Triplet Loss function:
+![alt text](https://github.com/Munkh99/iml/blob/ba09d0c4eace11c4003c86d91664d37300ca80bf/figures/Screenshot%202023-06-05%20at%2010.51.37.png)
 The loss function encourages the anchor and positive examples to be closer to each other than the anchor and negative examples, by at least a specified margin value. This margin acts as a threshold, ensuring that the positive and negative pairs are sufficiently separated in the embedding space. By minimizing the triplet loss, the network learns to produce embeddings that effectively discriminate between different classes or categories.
 
 
-Transfer Learning
+###Transfer Learning
 In the “Triplet Loss Network” architecture, each subnetwork has been constructed using Transfer Learning techniques. Specifically, for the task of image retrieval and comparison, three "twin" networks have been employed, all of which are pre-trained ResNet50 models. These pre-trained models serve as the basis for extracting and defining the features required to compare query images and have been chosen due to their great discriminative feature learning techniques (Figure 3).
 
 Figure 3: ResNet50 Architecture (He et al., 2015)
